@@ -1,0 +1,114 @@
+/**
+ * Animation Keyframes & Transitions for Visual Novel
+ */
+
+/* Subtle Ken Burns breathing zoom on background image */
+@keyframes kenBurns {
+  0% {
+    transform: scale(1.0) translateY(0);
+  }
+  50% {
+    transform: scale(1.05) translateY(-6px);
+  }
+  100% {
+    transform: scale(1.08) translateY(-12px);
+  }
+}
+
+/* Diagonal shine reflection over primary button */
+@keyframes shineSweep {
+  0% {
+    transform: translate(-100%, -100%) rotate(25deg);
+  }
+  20%, 100% {
+    transform: translate(150%, 150%) rotate(25deg);
+  }
+}
+
+/* Audio equalizer bars movement */
+@keyframes soundBar {
+  0%, 100% {
+    transform: scaleY(0.35);
+  }
+  50% {
+    transform: scaleY(1.0);
+  }
+}
+
+/* Blinking cursor for typewriter effect */
+@keyframes blinkCursor {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+}
+
+/* Fade and Slide up for story dialog panel */
+@keyframes panelSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(18px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1.0);
+  }
+}
+
+/* Intro screen card entrance */
+@keyframes introFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Confession screen entrance */
+@keyframes confessionGlowIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.94) translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Response card pop in */
+@keyframes responsePopIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.92) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Floating animation for subtle ambient badges */
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Subtle breathing glow on golden borders */
+@keyframes goldPulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(255, 214, 154, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 214, 154, 0.5);
+  }
+}
